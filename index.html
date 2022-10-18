@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="all" type="text/css" href="css/index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="vertical"></div>
+
+    <div id="box-1" class="box">
+        <form action="form_imc.php" method="post">
+            <fieldset>
+                <legend><strong>Calcular IMC</strong></legend>
+
+                <div class="inputBox">
+                    <label for="peso">&nbsp;Peso:</label>
+                    <input type="text" name="peso" id="peso" placeholder="kg">
+                </div>
+                
+                <div class="inputBox">
+                    <label for="altura">Altura: </label>
+                    <input type="text" name="altura" id="altura" placeholder="Metros">
+                </div>
+
+                <input type="submit" value="Enviar" name="enviar" id="submit"/>
+            </fieldset>
+        </form>
+    </div>
+
+    <div>
+        <table id="box-3">
+            <tr>
+                <th>Resultado</th>
+                <th>Situação</th>
+            </tr>
+            <tr>
+                <td>Abaixo de 17</td>
+                <td class="alinhar">Muito abaixo do peso</td>
+            </tr>
+            <tr>
+                <td>Entre 17 e 18,49</td>
+                <td class="alinhar">Abaixo do peso</td>
+            </tr>
+            <tr>
+                <td>Entre 18,5 e 24,99</td>
+                <td class="alinhar">Peso normal</td>
+            </tr>
+            <tr>
+                <td>Entre 25 e 29,99</td>
+                <td class="alinhar">Acima do peso</td>
+            </tr>
+            <tr>
+                <td>Entre 30 e 34,99</td>
+                <td class="alinhar">Obesidade I</td>
+            </tr>
+            <tr>
+                <td>Entre 35 e 39,99</td>
+                <td class="alinhar">Obesidade II (severa)</td>
+            </tr>
+            <tr>
+                <td>Acima de 40</td>
+                <td class="alinhar">Obesidade III (mórbida)</td>
+            </tr>
+        </table>
+    </div> 
+
+    <div id="box-2" class="box">
+        <form action="form_notas.php" method="post">
+            <fieldset>
+                <legend><strong>Calcular média</strong></legend>
+
+                <div class="inputBox">
+                <label for="nome">Nome: </label>
+                <input type="text" name="nome" id="nome" placeholder="Nome do aluno">
+                </div>
+
+                <div class="inputBox">   
+                    <div class="inputBox">
+                        <label for="nota1">&nbsp;&nbsp;Nota:</label>
+                        <input type="text" name="nota1" id="nota1" placeholder="1° Bimestre">
+                    </div>
+
+                    <div class="inputBox">
+                        <label for="nota2">&nbsp;&nbsp;Nota:</label>
+                        <input type="text" name="nota2" id="nota2" placeholder="2° Bimestre">
+                    </div>
+                </div>
+                <input type="submit" value="Enviar" name="enviar" id="submit"/>
+            </fieldset>
+            
+        </form>
+    </div>
+    <div>
+        <table id="box-4">
+            <tr>
+                <th>Media</th>
+                <th>Situação</th>
+            </tr>
+            <tr>
+                <td>Abaixo de 4,0</td>
+                <td class="alinhar">Reprovado</td>
+            </tr>
+            <tr>
+                <td>Maior ou igual a 4,0,<br> menor que 6.0</td>
+                <td class="alinhar">Exame final</td>
+            </tr>
+            <tr>
+                <td>Maior ou igual a 6,00</td>
+                <td class="alinhar">Aprovado</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
